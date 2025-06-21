@@ -43,37 +43,37 @@ unset($_SESSION['register_error']);
     </script>
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50/20 to-purple-50/20 dark:from-blue-900/20 dark:to-purple-900/20">
-    <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full mx-4 shadow-2xl border border-white/20 dark:border-gray-700/20 animate-fade-in">
-        <div class="flex items-center justify-center mb-6">
-            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+    <div class="p-8 max-w-md w-full mx-4 animate-fade-in">
+        <div class="flex items-center justify-center mb-6" style="flex-direction: column;">
+            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-3">
                 <i class="fas fa-comments text-white text-lg"></i>
             </div>
-            <h1 class="ml-3 text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">Connect-V</h1>
+            <h1 class="ml-3 text-2xl font-bold">Connect-V</h1>
         </div>
-        <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 text-center mb-6">Registrar</h2>
+        <h2 class="text-xl font-semibold text-center mb-6">Registar</h2>
         <form id="registerForm" class="space-y-4" method="POST" action="php/register.php" enctype="multipart/form-data">
             <div class="relative">
                 <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" 
-                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-400 dark:placeholder-gray-500 animate-slide-up">
+                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-500 dark:placeholder-gray-500 animate-slide-up">
                 <i class="fas fa-user absolute left-4 top-4 text-gray-400 group-focus-within:text-blue-500 transition-colors"></i>
             </div>
             <div class="relative">
                 <input type="email" id="email" name="email" placeholder="Digite seu email" 
-                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-400 dark:placeholder-gray-500 animate-slide-up">
+                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-500 dark:placeholder-gray-500 animate-slide-up">
                 <i class="fas fa-envelope absolute left-4 top-4 text-gray-400 group-focus-within:text-blue-500 transition-colors"></i>
             </div>
             <div class="relative">
                 <input type="password" id="password" name="password" placeholder="Digite sua senha" 
-                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-400 dark:placeholder-gray-500 animate-slide-up">
+                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-500 dark:placeholder-gray-500 animate-slide-up">
                 <i class="fas fa-lock absolute left-4 top-4 text-gray-400 group-focus-within:text-blue-500 transition-colors"></i>
             </div>
             <div class="relative">
                 <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme sua senha" 
-                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-400 dark:placeholder-gray-500 animate-slide-up">
+                       class="w-full pl-12 pr-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 placeholder-gray-500 dark:placeholder-gray-500 animate-slide-up">
                 <i class="fas fa-lock absolute left-4 top-4 text-gray-400 group-focus-within:text-blue-500 transition-colors"></i>
             </div>
             <div class="relative">
-                <label for="profile_pic" class="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">Foto de Perfil (opcional)</label>
+                <label for="profile_pic" class="block text-sm font-medium text-gray-400 mb-1">Foto de Perfil (opcional)</label>
                 <input type="file" id="profile_pic" name="profile_pic" accept="image/jpeg,image/png" 
                        class="w-full px-4 py-3 bg-gray-50/50 dark:bg-gray-700/50 border-0 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white dark:focus:bg-gray-600 dark:text-gray-200 transition-all duration-300 animate-slide-up">
                 <i class="fas fa-image absolute left-4 top-10 text-gray-400 group-focus-within:text-blue-500 transition-colors"></i>
@@ -87,12 +87,9 @@ unset($_SESSION['register_error']);
                 <i class="fas fa-user-plus mr-2"></i>Registrar
             </button>
         </form>
-        <p class="text-center mt-4 text-sm text-gray-600 dark:text-gray-400">
+        <p class="text-center mt-4 text-sm text-white-600 dark:text-white-400">
             Já tem uma conta? <a href="login.php" class="text-blue-500 hover:text-blue-600 transition-colors">Faça Login</a>
         </p>
-        <button id="toggleTheme" class="mt-4 text-sm text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors w-full text-center">
-            <i id="themeIcon" class="fas fa-moon mr-1"></i>Alternar Tema
-        </button>
     </div>
 
     <script>

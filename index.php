@@ -61,8 +61,9 @@ try {
             }
         }
     </script>
+
     <style>
-        /* Modo light (padrão) */
+               /* Modo light (padrão) */
         body {
             background: linear-gradient(135deg, #f8fafc, #e0e7ff);
             color: #1f2937;
@@ -378,6 +379,7 @@ try {
     font-weight: 500;
 }
     </style>
+
 </head>
 <body class="min-h-screen overflow-hidden">
     <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden hidden" onclick="toggleMobileMenu()"></div>
